@@ -1,0 +1,56 @@
+<html>
+
+<head>
+    <title>Github</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background-color: rgb(13, 132, 158);
+        }
+
+        .container {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            background-color: rgb(6, 176, 214);
+            color: black;
+            text-align: center;
+            padding: 20px 50px;
+            border-radius: 10px;
+        }
+
+        button {
+            padding: 5px 20px;
+            border-radius: 10px;
+            color: black;
+            background-color: rgb(116, 196, 214);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h2>Github Profile User</h2>
+            <input type="text" placeholder="username" id="inp"> <br><br>
+            <button onclick="generate()">Check</button><br><br>
+            <a href="" id="ans"></a>
+        </div>
+    </div>
+    <script>
+        let input = document.getElementById("inp");
+        function generate() {
+            ans.href = "https://github.com/" + input.value;
+            document.getElementById("ans").innerHTML = "view profile";
+        }
+    </script>
+</body>
+
+</html>
